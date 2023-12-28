@@ -27,7 +27,7 @@ class UpdateContactRequest extends FormRequest
             'address' => ['string', 'required', 'min:5'],
             'email' => ['string', 'required', 'min:2'],
             'phone' => ['required', 'phone'],
-            'picture' => ['string'], // TODO: picture as file?
+            'picture' => ['string', 'url'],
         ];
     }
 }

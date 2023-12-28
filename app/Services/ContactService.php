@@ -22,9 +22,13 @@ class ContactService
 
     public function store(StoreContactRequest $request)
     {
+
     }
 
-    public function update(UpdateContactRequest $request)
+    public function update(int $id, UpdateContactRequest $request)
     {
+        $contact = Contact::query()->where(['id' => $id, 'user_id' => auth()->user()->id])->firstOrFail();
+
+        $contact->update($request->validated());
     }
 }
