@@ -32,7 +32,9 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        //
+        $this->contactService->store($request);
+
+        return response()->noContent();
     }
 
     /**

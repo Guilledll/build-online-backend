@@ -22,7 +22,9 @@ class ContactService
 
     public function store(StoreContactRequest $request)
     {
+        $contact = auth()->user()->contacts()->create($request->validated());
 
+        return $contact;
     }
 
     public function update(int $id, UpdateContactRequest $request)

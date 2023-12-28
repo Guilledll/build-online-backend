@@ -24,7 +24,7 @@ class ContactFactory extends Factory
             'email' => fake()->safeEmail(),
             'address' => fake()->address(),
             'phone' => fake()->phoneNumber(),
-            'picture' => fake()->image(),
+            'picture' => fake()->imageUrl(),
             'created_at' => now(),
             'updated_at' => now(),
         ];
