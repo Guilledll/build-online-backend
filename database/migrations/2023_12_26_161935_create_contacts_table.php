@@ -21,7 +21,8 @@ return new class extends Migration {
             $table->string('address');
             $table->string('email');
             $table->string('phone');
-            $table->string('picture');
+            $table->string('picture', 2048);
+            $table->timestamps();
         });
     }
 

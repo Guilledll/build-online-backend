@@ -4,10 +4,9 @@ namespace App\Services;
 
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
-use App\Interfaces\ContactServiceInterface;
 use App\Models\Contact;
 
-class ContactService implements ContactServiceInterface
+class ContactService
 {
     public function all(int $user_id)
     {

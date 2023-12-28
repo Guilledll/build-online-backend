@@ -25,6 +25,8 @@ class ContactFactory extends Factory
             'address' => fake()->address(),
             'phone' => fake()->phoneNumber(),
             'picture' => fake()->image(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

@@ -3,10 +3,9 @@
 namespace App\Services;
 
 use App\Http\Requests\Auth\LoginRequest;
-use App\Interfaces\LoginServiceInterface;
 use App\Models\User;
 
-class LoginService implements LoginServiceInterface
+class LoginService
 {
     public function login(LoginRequest $request): string
     {
