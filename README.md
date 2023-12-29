@@ -8,7 +8,6 @@
 - `.env` file should be copied to root during composer installation (if not, simply copy and paste `.env.example` file)
 - Running `php artinsa db:seed` command
   - It should load a user with email: `test@example.com` and password: `password`
-  - This user will have 10 previously loaded contacts with complete information
 
 ## ⚙️ Internals
 - This projects uses **Larvel Sanctum Tokens** to handle user login via API.
